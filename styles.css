@@ -1,0 +1,3194 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #3498db; /* خط تحت الهيدر */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.current-date {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cards-section, .external-books-section {
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background-color: #ecf0f1;
+    border-radius: 15px; /* زوايا ناعمة */
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* تحريك البطاقة للأعلى عند التحويم */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* ظل أقوى عند التحويم */
+}
+
+.card-icon {
+    font-size: 50px;
+    color: #3498db; /* لون الأيقونة */
+}
+
+.button-container {
+    margin-top: 15px;
+}
+
+.view-button, .download-button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.view-button:hover, .download-button:hover {
+    background-color: #1c6698; /* لون أغمق عند التحويم */
+}
+
+.rating {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #f39c12;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+body {
+    font-family: 'Cairo', sans-serif; /* استخدام خط عصري وجميل */
+    background-color: #eef2f5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* لمنع التمرير الأفقي */
+}
+
+header {
+    background: linear-gradient(135deg, #2980b9, #2ecc71, #ff8c00); /* تدرج ألوان جميل */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #27ae60; /* خط تحت الهيدر */
+    animation: fadeIn 1s; /* تأثير ظهور الهيدر */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.current-date {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    color: white;
+    border-radius: 10px;
+    margin: 20px 0;
+    animation: slideIn 1s; /* تأثير دخول */
+}
+
+.ratings-section {
+    padding: 20px;
+    background: linear-gradient(135deg, #ecf0f1, #bdc3c7); /* تدرج ألوان للقسم */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: zoomIn 1s; /* تأثير تكبير */
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: linear-gradient(135deg, #ffffff, #f1f1f1); /* تدرج ألوان جميل للبطاقات */
+    border-radius: 15px; /* زوايا ناعمة */
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* انتقال سلس */
+    position: relative;
+    opacity: 0; /* اجعلها غير مرئية عند التحميل */
+    animation: fadeInUp 0.5s forwards; /* تأثير ظهور لأعلى */
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+.card:nth-child(6) { animation-delay: 0.6s; }
+.card:nth-child(7) { animation-delay: 0.7s; }
+.card:nth-child(8) { animation-delay: 0.8s; }
+
+.card:hover {
+    transform: translateY(-5px); /* تحريك البطاقة لأعلى عند التحويم */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* تأثير ظل أكبر */
+}
+
+.card-icon {
+    font-size: 40px;
+    color: #2980b9; /* لون أيقونات */
+}
+
+.button-container {
+    margin-top: 15px;
+}
+
+.view-button, .download-button {
+    background-color: #27ae60; /* لون زر جميل */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-button:hover, .download-button:hover {
+    background-color: #219653; /* لون أغمق عند التحويم */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #2980b9, #2ecc71); /* تدرج ألوان جميل */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    animation: fadeIn 1s; /* تأثير ظهور */
+}
+
+/* تأثيرات حركية */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #eef2f5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #1abc9c, #3498db);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #27ae60;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f39c12; /* لون عند التحويم */
+}
+
+.current-date {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #3498db, #1abc9c);
+    color: white;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.ratings-section {
+    padding: 20px;
+    background: linear-gradient(135deg, #ecf0f1, #bdc3c7);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: linear-gradient(135deg, #ffffff, #f1f1f1);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    animation: fadeInUp 0.5s forwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-icon {
+    font-size: 40px;
+    color: #2980b9;
+}
+
+.button-container {
+    margin-top: 15px;
+}
+
+.view-button, .download-button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-button:hover, .download-button:hover {
+    background-color: #219653;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #2980b9, #2ecc71);
+    color: white;
+    bottom: 0;
+    width: 100%;
+}
+
+/* تأثيرات حركية */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #eef2f5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #1abc9c, #3498db);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #27ae60;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f39c12; /* لون عند التحويم */
+}
+
+.current-date {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #3498db, #1abc9c);
+    color: white;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.ratings-section {
+    padding: 20px;
+    background: linear-gradient(135deg, #ecf0f1, #bdc3c7);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: linear-gradient(135deg, #ffffff, #f1f1f1);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    animation: fadeInUp 0.5s forwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-icon {
+    font-size: 40px;
+    color: #2980b9;
+}
+
+.button-container {
+    margin-top: 15px;
+}
+
+.view-button, .download-button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.view-button:hover, .download-button:hover {
+    background-color: #219653;
+    transform: scale(1.05); /* تأثير تكبير عند التحويم */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #2980b9, #2ecc71);
+    color: white;
+    bottom: 0;
+    width: 100%;
+}
+
+/* تأثيرات حركية */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eef2f5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* لمنع التمرير الجانبي */
+}
+
+header {
+    background: linear-gradient(90deg, #2c3e50, #3498db);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #2980b9; /* خط تحت الهيدر */
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.current-date {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #3498db; /* لون أغمق عند التحويم */
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    top: 100%; /* ظهور القائمة تحت العنصر */
+}
+
+.nav-links li:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    color: #2c3e50;
+    padding: 10px;
+    display: block;
+    text-align: left;
+}
+
+.dropdown a:hover {
+    background-color: #f0f0f0; /* لون خلفية عند التحويم */
+}
+
+.hero {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(90deg, #3498db, #2c3e50);
+    color: white;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.cards-section, .external-books-section {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #ecf0f1;
+    border-radius: 15px; /* زوايا ناعمة */
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05); /* تكبير خفيف عند التحويم */
+}
+
+.card-icon {
+    font-size: 40px;
+    color: #3498db;
+}
+
+.button-container {
+    margin-top: 15px;
+}
+
+.view-button, .download-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-button:hover, .download-button:hover {
+    background-color: #2980b9; /* لون أغمق عند التحويم */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495e;
+    color: white;
+    position: relative;
+}
+/* styles.css */
+
+/* ... باقي الكود كما هو ... */
+
+nav {
+    margin-top: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px; /* إضافة padding لزيادة المساحة حول النص */
+    border-radius: 25px; /* زوايا مستديرة */
+    background: rgba(255, 255, 255, 0.2); /* خلفية شفافة قليلاً */
+    transition: color 0.3s, background 0.3s; /* إضافة transition للخلفية */
+}
+
+.nav-links a:hover {
+    color: #3498db; /* لون أغمق عند التحويم */
+    background: rgba(255, 255, 255, 0.4); /* تغيير الخلفية عند التحويم */
+}
+
+/* ... باقي الكود كما هو ... */
+.card:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.parallax {
+    background-image: url('your-3d-background.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    color: #000000;
+    overflow-x: hidden;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 180px;
+    animation: fadeIn 0.5s forwards;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.button {
+    background-color: #ff5733; /* لون خلفية الزر */
+    color: white; /* لون النص */
+    padding: 10px 20px; /* المساحة حول النص */
+    border: none; /* إزالة الحدود */
+    border-radius: 5px; /* زوايا دائرية */
+    cursor: pointer; /* تغيير شكل المؤشر */
+    transition: background-color 0.3s ease; /* تأثير انتقال عند التغيير */
+}
+
+.button:hover {
+    background-color: #c70039; /* لون جديد عند التمرير */
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* لتكون الخلفية خلف كل العناصر الأخرى */
+}
+h1 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+h1 {
+    color: hsl(0, 0%, 100%);
+}
+body {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+@keyframes fall {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fall {
+    animation: fall 1s ease forwards;
+}
+body {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+header {
+    background: linear-gradient(to right, #4a90e2, #8e44ad);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative; /* For positioning particles */
+    overflow: hidden; /* To hide particles overflow */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Behind other elements */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 2em;
+}
+
+.cards-section, .external-books-section {
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-icon {
+    font-size: 3em;
+}
+
+.button-container {
+    margin: 10px 0;
+}
+
+.view-button, .download-button {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background 0.3s ease;
+}
+
+.view-button:hover, .download-button:hover {
+    background: #357ab8;
+}
+
+.rating {
+    color: #ffd700; /* Gold color for ratings */
+}
+
+.ratings-section {
+    background: #e2e2e2;
+    padding: 20px;
+}
+
+.rating-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.stars {
+    margin: 10px 0;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #ffd700;
+}
+
+/* Animations */
+.animate {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+button:hover {
+    background: #ffd700; /* لون الخلفية الذهبي عند التمرير */
+    color: #333; /* تغيير لون النص عند التمرير */
+    transform: scale(1.1); /* تكبير الزر قليلاً */
+    transition: all 0.3s ease; /* تأثير الانتقال */
+}
+.ratings-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.rating-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.rating-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.rating-card:hover {
+    transform: scale(1.05);
+}
+
+.rating-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.stars {
+    margin-bottom: 10px;
+}
+
+.stars span {
+    font-size: 1.2rem;
+    color: #f0d64f;
+}
+
+.rating-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #45a049;
+}
+/* تحسين القوائم على الشاشات الصغيرة */
+@media only screen and (max-width: 768px) {
+
+    /* تحويل القوائم إلى أعمدة */
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+  
+    nav ul li {
+      list-style: none;
+      margin-bottom: 15px;
+      width: 100%;
+    }
+  
+    nav ul li a {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 1.2rem;
+      text-align: center;
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #333;
+    }
+  
+    /* تحسين حجم النص */
+    nav ul li a:hover {
+      background-color: #ddd;
+    }
+  }
+  /* إظهار زر القائمة المنسدلة فقط على الشاشات الصغيرة */
+@media only screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      text-align: center;
+    }
+  
+    nav ul {
+      display: none; /* إخفاء القائمة بشكل افتراضي */
+    }
+  
+    .menu-toggle.active + nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+/* ضبط حجم الصور */
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* تمركز الصور في الوسط */
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+/* إضافة تأثير مرور الماوس على الروابط */
+nav ul li a {
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    background-color: #ddd;
+    color: #000;
+  }
+      /* تحسين حجم النصوص على الشاشات الصغيرة */
+body {
+    font-size: 1rem;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    body {
+      font-size: 1.2rem; /* زيادة حجم النص على الشاشات الصغيرة */
+    }
+  
+    h1, h2, h3 {
+      text-align: center; /* تمركز العناوين */
+      font-size: 1.5rem;
+    }
+  }
+  .tips-section {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    text-align: center;
+    max-width: 800px;
+}
+
+.tips-section h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.tips-section p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.tips-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+/* تصميم قسم النصائح */
+.tips-section {
+    background-color: #f9f9f9;  /* لون الخلفية */
+    padding: 20px;  /* مسافة داخلية */
+    border-radius: 10px;  /* زوايا مستديرة */
+    text-align: center;  /* محاذاة النصوص للوسط */
+    max-width: 800px;  /* الحد الأقصى للعرض */
+    margin: 30px auto;  /* ضبط المسافة بين الأقسام */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* تأثير الظل */
+}
+
+.tips-section h2 {
+    font-size: 2.5rem;  /* حجم الخط للعناوين */
+    color: #333;  /* لون العنوان */
+}
+
+.tips-section p {
+    font-size: 1.2rem;  /* حجم الخط للنص */
+    color: #555;  /* لون النص */
+    margin-bottom: 20px;  /* مسافة سفلية */
+}
+
+.tips-image {
+    max-width: 100%;  /* ضبط عرض الصورة لتتناسب مع المحتوى */
+    height: auto;  /* الحفاظ على نسبة الأبعاد */
+    border-radius: 10px;  /* زوايا الصورة المستديرة */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* تأثير الظل على الصورة */
+    transition: transform 0.3s ease;  /* تأثير التحريك عند التمرير */
+}
+
+.tips-image:hover {
+    transform: scale(1.05);  /* تكبير الصورة عند التمرير */
+}
+@media (max-width: 768px) {
+    .tips-section {
+        padding: 15px;
+    }
+
+    .tips-section h2 {
+        font-size: 2rem;
+    }
+
+    .tips-section p {
+        font-size: 1rem;
+    }
+}
+.tip {
+    display: none;  /* إخفاء النصائح الأخرى */
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#tip1 {
+    display: block;  /* عرض النصيحة الأولى بشكل افتراضي */
+}
+#showMoreBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#showMoreBtn:hover {
+    background-color: #555;
+}
+.add-content-section {
+    margin-bottom: 20px;
+}
+
+#addContentBtn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#contentOptions {
+    margin-top: 10px;
+}
+
+#contentOptions button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contentOptions button:hover {
+    background-color: #e2e6ea;
+}
+
+#contentContainer p, #contentContainer img, #contentContainer video, .card {
+    margin: 15px 0;
+}
+
+.card {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+/* إعدادات عامة */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* واجهة البداية (Landing Page) */
+#landingPage {
+    position: relative;
+    height: 100vh; /* يجعل الصفحة تغطي الشاشة بالكامل */
+    background: url('your-image-url-here.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#landingPage .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* طبقة شفافة فوق الصورة */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#landingPage h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#scrollDownBtn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    animation: bounce 2s infinite;
+}
+
+/* حركة التمرير */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* حركة النصوص */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* المحتويات التالية أسفل الصورة */
+#mainContent {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#mainContent h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+/* إعدادات عامة */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* واجهة البداية (Landing Page) */
+#landingPage {
+    position: relative;
+    height: 100vh; /* يجعل الصفحة تغطي الشاشة بالكامل */
+    background: url('educational_header_image.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#landingPage .overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* طبقة شفافة فوق الصورة */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#landingPage h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#scrollDownBtn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    animation: bounce 2s infinite;
+}
+
+/* حركة التمرير */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* حركة النصوص */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* المحتويات التالية أسفل الصورة */
+#mainContent {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#mainContent h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+/* إعدادات عامة */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* واجهة البداية (Landing Page) */
+#landingPage {
+    position: relative;
+    height: 100vh;
+    background: url('educational_header_image.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#landingPage .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#landingPage h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#scrollDownBtn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    animation: bounce 2s infinite;
+}
+
+/* تأثير تغيير اللون عند المرور */
+#scrollDownBtn:hover {
+    background-color: #218838; /* لون أغمق عند المرور */
+}
+
+/* حركة التمرير */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* حركة النصوص */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* المحتويات الرئيسية */
+#mainContent {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#mainContent h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* قسم النصائح */
+#tips {
+    padding: 40px;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.tips-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tip-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+/* تأثير عند التمرير فوق بطاقات النصائح */
+.tip-card:hover {
+    transform: scale(1.05);
+}
+/* إعدادات عامة */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* واجهة البداية (Landing Page) */
+#landingPage {
+    position: relative;
+    height: 100vh;
+    background: url('educational_header_image.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#landingPage .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#landingPage h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#scrollDownBtn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    animation: bounce 2s infinite;
+}
+
+/* تأثير تغيير اللون عند المرور */
+#scrollDownBtn:hover {
+    background-color: #218838; /* لون أغمق عند المرور */
+}
+
+/* حركة التمرير */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* حركة النصوص */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* المحتويات الرئيسية */
+#mainContent {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* قسم النصائح */
+#tips {
+    padding: 40px;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.tips-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tip-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+/* تأثير عند التمرير فوق بطاقات النصائح */
+.tip-card:hover {
+    transform: scale(1.05);
+}
+
+.tip-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* قسم الموارد التعليمية */
+#resources {
+    padding: 40px;
+    text-align: center;
+}
+
+#resources ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#resources a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+#resources a:hover {
+    color: #0056b3; /* لون أغمق عند المرور */
+}
+#scrollDownBtn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#scrollDownBtn:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+/* تصميم الواجهة الرئيسية */
+.hero {
+    height: 100vh;
+    background: url('path-to-your-image.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5); /* خلفية شفافة */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cta-btn {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e67e22;
+}
+/* تأثيرات الأنيميشن */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* تحسين الأزرار */
+button {
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #3498db;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* تحسين الخانات */
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+/* تقليل المسافات */
+section {
+    padding: 50px 20px;
+}
+
+.testimonial-section {
+    margin-top: 0; /* تقليل المسافة الزائدة */
+}
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+.parallax {
+    background-image: url('path-to-background-image.jpg');
+    min-height: 400px; /* يمكنك تعديل الطول حسب الحاجة */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* تأثير Hover على الصور */
+img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+img:hover {
+    transform: scale(1.05); /* تكبير الصورة عند المرور */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+/* تأثير انزلاق الأزرار عند المرور */
+.cta-btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+    transition: transform 0.5s ease;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.cta-btn:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+/* تأثير الظهور */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* تصميم قسم التقييمات */
+.testimonials {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.testimonial-slider {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.testimonial {
+    flex: 0 0 300px;
+    background: white;
+    margin: 0 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+/* تصميم التذييل */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content h3 {
+    margin-bottom: 15px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.socials a:hover {
+    color: #3498db;
+}
+.icon-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff; /* لون الخلفية للأيقونة */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.icon-container:hover {
+    transform: scale(1.1); /* تكبير بسيط عند التمرير */
+}
+
+.icon-container img {
+    width: 60%; /* تعديل حجم الصورة داخل الأيقونة */
+}
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-10px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+.icon-container {
+    animation: float 3s ease-in-out infinite; /* حركة مستمرة للأيقونات */
+}
+h1 {
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+}
+
+p {
+    font-size: 18px;
+    color: #ccc;
+}
+.cta-button {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 30px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ddd;
+}
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.ripple-btn {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    color: black;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.ripple-btn::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    transform: scale(0);
+    opacity: 0;
+    pointer-events: none;
+    animation: ripple 0.6s linear;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+.fade-in-text {
+    animation: fadeIn 2s ease-in-out;
+}
+.scroll-effect {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+.scroll-effect.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.pulse-button {
+    background-color: #ff5050;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* استخدام خط Roboto */
+    background-color: #4FC3F7; /* لون الخلفية */
+    color: rgb(0, 0, 0); /* لون النص */
+    text-align: center;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f7fa; /* لون الخلفية */
+    color: #333; /* لون النص */
+    text-align: center;
+}
+
+header {
+    background-color: #4FC3F7; /* لون رأس الصفحة */
+    padding: 20px 0; /* مسافات من الأعلى والأسفل */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* ظل خفيف */
+    border-radius: 0 0 20px 20px; /* زوايا دائرية أسفل */
+}
+
+h1, h2 {
+    margin: 10px 0; /* مسافات رأسية بين العناوين */
+}
+
+.user-info {
+    margin: 15px 0; /* مسافات رأسية */
+    font-weight: 500;
+}
+
+.nav-links a {
+    margin: 0 15px; /* مسافات أفقية بين الروابط */
+    text-decoration: none; /* إزالة الخط السفلي */
+    color: white; /* لون النص */
+    font-weight: bold; /* خط عريض */
+    transition: color 0.3s; /* تأثير تلاشي */
+}
+
+.nav-links a:hover {
+    color: #ffeb3b; /* تغيير اللون عند التحويم */
+}
+
+main {
+    padding: 20px; /* مسافات داخلية */
+}
+
+.tips, .resources {
+    background-color: white; /* لون الخلفية للقسم */
+    border-radius: 8px; /* زوايا دائرية */
+    padding: 15px; /* مسافات داخلية */
+    margin: 20px 0; /* مسافات رأسية */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+}
+
+.add-button {
+    position: relative; /* لتحديد موضع الزر */
+    margin: 20px 0; /* مسافات رأسية */
+}
+
+#add-btn {
+    font-size: 30px; /* حجم الزر */
+    background-color: #ff5722; /* لون زر الإضافة */
+    color: white; /* لون النص */
+    border: none; /* بدون حواف */
+    border-radius: 50%; /* شكل دائري */
+    width: 60px; /* عرض الزر */
+    height: 60px; /* ارتفاع الزر */
+    cursor: pointer; /* شكل المؤشر */
+    transition: background-color 0.3s; /* تأثير تغيير اللون */
+}
+
+#add-btn:hover {
+    background-color: #e64a19; /* تغيير اللون عند التحويم */
+}
+
+.dropdown-content {
+    display: none; /* مخفي بشكل افتراضي */
+    position: absolute; /* موضع مطلق */
+    background-color: white; /* لون الخلفية */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* ظل خفيف */
+    border-radius: 8px; /* زوايا دائرية */
+    z-index: 1; /* لجعلها فوق العناصر الأخرى */
+    margin-top: 10px; /* مسافة علوية */
+}
+
+.dropdown-item {
+    padding: 10px; /* مسافات داخلية */
+    border: none; /* بدون حواف */
+    background-color: transparent; /* خلفية شفافة */
+    width: 100%; /* عرض كامل */
+    text-align: left; /* محاذاة لليسار */
+    cursor: pointer; /* شكل المؤشر */
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1; /* لون خلفية عند التحويم */
+}
+
+footer {
+    background-color: #4FC3F7; /* لون تذييل الصفحة */
+    color: white; /* لون النص */
+    padding: 10px 0; /* مسافات من الأعلى والأسفل */
+    position: relative; /* لجعل التذييل في أسفل الصفحة */
+    bottom: 0;
+    width: 100%;
+}
+.tips, .resources {
+    transition: transform 0.3s, box-shadow 0.3s; /* تأثيرات عند التحويم */
+}
+
+.tips:hover, .resources:hover {
+    transform: translateY(-5px); /* الحركة لأعلى */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* ظل أكثر وضوحًا */
+}
+.tips, .resources, .add-button, footer {
+    border-radius: 15px; /* زوايا دائرية */
+}
+nav ul li {
+    position: relative; /* للسماح باستخدام تأثيرات الفقرة */
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li:hover {
+    color: #4CAF50; /* تغيير اللون عند التحويم */
+}
+
+nav ul li:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #4CAF50; /* لون الخط */
+    transition: width 0.3s ease, left 0.3s ease; /* تأثير سلس */
+}
+
+nav ul li:hover:after {
+    width: 100%; /* يتوسع الخط عند التحويم */
+    left: 0; /* يبدأ من اليسار */
+}
+nav ul li .dropdown {
+    display: none; /* إخفاء القائمة المنسدلة */
+    position: absolute; /* لكي تكون فوق العناصر الأخرى */
+    background-color: white; /* لون الخلفية */
+    border: 1px solid #ccc; /* حدود */
+    border-radius: 5px; /* زوايا دائرية */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل */
+    margin-top: 5px; /* مسافة فوق القائمة */
+    z-index: 1000; /* أعلى من العناصر الأخرى */
+}
+
+nav ul li:hover .dropdown {
+    display: block; /* يظهر عند التحويم */
+    animation: fadeIn 0.3s ease; /* تأثير السقوط */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); } /* تبدأ غير مرئية */
+    to { opacity: 1; transform: translateY(0); } /* تصبح مرئية */
+}
+nav ul li:hover .dropdown {
+    display: block;
+    transform: scale(1.05); /* زيادة الحجم قليلاً */
+    transition: transform 0.3s ease; /* تأثير سلس */
+}
+.dropdown {
+    opacity: 1; /* مرئية */
+    transition: opacity 0.3s ease; /* تأثير تلاشي سلس */
+}
+
+nav ul li:not(:hover) .dropdown {
+    opacity: 0; /* غير مرئية */
+    pointer-events: none; /* لا تتفاعل */
+}
+.add-button {
+    position: relative; /* يسمح بتداخل العناصر */
+}
+
+#options {
+    display: none; /* إخفاء الخيارات بشكل افتراضي */
+    position: absolute; /* فوق العناصر الأخرى */
+    background-color: white; /* لون الخلفية */
+    border: 1px solid #ccc; /* حدود */
+    z-index: 1000; /* أعلى من العناصر الأخرى */
+}
+
+.add-button:hover #options {
+    display: block; /* يظهر عند التحويم */
+}
+.play-with-me {
+    background-color: #ffffff; /* لون الخلفية */
+    padding: 20px; /* هوامش داخلية */
+    border-radius: 10px; /* زوايا ناعمة */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* ظل */
+    margin: 20px 0; /* هوامش خارجية */
+}
+
+.play-with-me h2 {
+    text-align: center; /* مركز العنوان */
+    color: #3498db; /* لون العنوان */
+}
+.play-with-me {
+    background-color: #f9f9f9; /* لون خلفية فاتح */
+    border: 2px solid #3498db; /* حدود */
+    padding: 20px;
+    border-radius: 15px; /* زوايا ناعمة */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* ظل */
+    transition: transform 0.3s; /* تأثير التحويل */
+}
+
+.play-with-me:hover {
+    transform: scale(1.02); /* تكبير بسيط عند التمرير */
+}
+
+.play-with-me h2 {
+    text-align: center;
+    color: #2980b9; /* لون العنوان */
+}
+
+.answer-btn {
+    background-color: #3498db; /* لون الزر */
+    color: #fff; /* لون النص */
+    border: none;
+    padding: 10px 15px; /* هوامش داخلية */
+    margin: 5px; /* هوامش خارجية */
+    border-radius: 5px; /* زوايا ناعمة */
+    cursor: pointer;
+    transition: background-color 0.3s; /* تأثير التغيير */
+}
+
+.answer-btn:hover {
+    background-color: #2980b9; /* لون الزر عند التمرير */
+}
+.nav-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #2980b9; /* لون الزر عند التمرير */
+}
+.grade-table {
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .grade-table table {
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .grade-table th, .grade-table td {
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+  }
+  
+  .grade-table th {
+    background-color: #5a9;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .grade-table tr:hover {
+    background-color: #e3f2fd;
+  }
+  
+  .grade-table td {
+    background-color: #fff;
+    color: #333;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+#subjects-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.subject-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.subject-card:hover {
+    transform: translateY(-10px);
+}
+
+.subject-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.subject-card button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subject-card button:hover {
+    background-color: #0056b3;
+}
+
+#quiz-section .question {
+    margin-bottom: 30px;
+}
+
+#quiz-section button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#quiz-section button:hover {
+    background-color: #0056b3;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+#quiz-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.question-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.question-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.question-card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.question-card p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.question-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.question-card button:hover {
+    background-color: #0056b3;
+}
+.result {
+    font-size: 24px;
+    font-weight: bold;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    transition: opacity 0.3s ease;
+}
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+.button {
+    border-radius: 10px; /* يمكنك تعديل القيمة حسب الرغبة */
+}
+.card {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* ظل ناعم */
+}
+.card {
+    background: white;
+    border-radius: 15px; /* زوايا مستديرة */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* ظل ناعم */
+    padding: 20px;
+    margin: 10px;
+}
+.btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* تأثيرات سلسة */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* تغيير اللون */
+    transform: scale(1.05); /* تكبير الزر */
+}
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.move-up {
+    transform: translateY(10px);
+    transition: transform 0.3s ease;
+}
+
+.move-up:hover {
+    transform: translateY(0);
+}
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* حجم خط أصغر للشاشات الصغيرة */
+    }
+
+    .card {
+        padding: 10px;
+        margin: 5px;
+    }
+}
+.btn {
+    background: linear-gradient(90deg, rgba(255, 158, 0, 1) 0%, rgba(255, 0, 163, 1) 100%);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+#chatbox {
+    height: 300px;
+    border: 1px solid #ccc;
+    overflow-y: scroll;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#user-input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#send-btn {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#send-btn:hover {
+    background-color: #45a049;
+}
+.button-container {
+    display: flex;
+    gap: 10px; /* المسافة بين الأزرار */
+}
+
+.view-button, .download-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-button {
+    background-color: #4CAF50; /* لون زر الرؤية */
+    color: white;
+}
+
+.download-button {
+    background-color: #008CBA; /* لون زر التحميل */
+    color: white;
+    text-decoration: none; /* إزالة الخط السفلي من الرابط */
+    display: inline-block; /* جعل الرابط كزر */
+    text-align: center; /* محاذاة النص في المنتصف */
+}
+.button-container {
+    display: flex;
+    gap: 10px; /* المسافة بين الأزرار */
+}
+
+.download-button {
+    padding: 10px 15px;
+    background-color: #008CBA; /* لون زر التحميل */
+    color: white;
+    text-decoration: none; /* إزالة الخط السفلي من الرابط */
+    display: inline-block; /* جعل الرابط كزر */
+    text-align: center; /* محاذاة النص في المنتصف */
+    border-radius: 5px; /* زاوية دائرية */
+    border: none; /* إزالة الحدود */
+    cursor: pointer; /* تغيير شكل المؤشر عند المرور فوق الزر */
+}
+.card {
+    border-radius: 15px;
+    overflow: hidden; /* لإخفاء الزوايا الزائدة */
+}
+
+.download-button {
+    border-radius: 20px;
+}
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+.card:hover {
+    transform: scale(1.05); /* تكبير البطاقة */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* إضافة ظل */
+    transition: all 0.3s ease; /* انتقال سلس */
+}
+
+.download-button:hover {
+    background-color: #005f8d; /* تغيير لون الخلفية */
+}
+.card {
+    perspective: 1000px; /* لتعزيز العمق */
+}
+
+.card:hover {
+    transform: rotateY(10deg);
+}
+body {
+    font-family: 'Roboto', sans-serif; /* اختر خط جميل */
+    font-size: 16px; /* حجم نص مناسب */
+}
+/* تصميم البطاقة */
+.card {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* أيقونة الكتاب */
+.icon img {
+    width: 60px;
+    height: 60px;
+}
+
+/* العنوان */
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* زر التحميل */
+.download-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.download-button i {
+    font-size: 30px;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+}
+body {
+    background-color: #f0f4f8; /* لون خلفية لطيف */
+    font-family: 'Arial', sans-serif; /* اختيار خط بسيط */
+}
+
+/* تصميم البطاقة */
+.card {
+    position: relative;
+    width: 220px; /* زيادة العرض قليلاً */
+    height: 320px; /* زيادة الارتفاع قليلاً */
+    background-color: #ffffff; /* خلفية بيضاء */
+    border-radius: 20px; /* حواف مستديرة */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* تأثير الظل */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 15px; /* زيادة الهامش قليلاً */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* حركة خفيفة عند التمرير */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); /* زيادة الظل عند التمرير */
+}
+
+/* أيقونة الكتاب */
+.icon img {
+    width: 80px; /* زيادة حجم الأيقونة */
+    height: 80px; /* زيادة حجم الأيقونة */
+}
+
+/* العنوان */
+.title {
+    font-size: 20px; /* زيادة حجم الخط */
+    font-weight: bold;
+    color: #333; /* لون داكن للنص */
+    margin: 10px 0; /* إضافة فراغات حول العنوان */
+}
+
+/* زر التحميل */
+.download-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px; /* زيادة الارتفاع للزر */
+    background-color: #007bff;
+    border-radius: 0 0 20px 20px; /* حواف مستديرة من الأسفل */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: background-color 0.3s ease; /* تأثير التغيير في اللون */
+}
+
+.download-button:hover {
+    background-color: #0056b3; /* تغيير اللون عند التمرير */
+    transform: scale(1.05); /* تأثير التحريك عند التمرير */
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.button {
+    background-color: #007bff; /* اللون الأزرق */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3; /* لون عند التمرير */
+}
+.button {
+    transition: background-color 0.3s ease;
+}
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+.button {
+    background-color: #28a745; /* لون الزر */
+    color: white;
+    padding: 15px 20px; /* تكبير حجم الزر */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* عرض الزر بالكامل */
+}
+
+.button:hover {
+    background-color: #218838;
+    transform: scale(1.05); /* تكبير الزر عند التمرير */
+}
+
+/* أيقونات للزر */
+.button i {
+    margin-left: 10px;
+}
+/* تأثير الظهور عند التمرير */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.book-section {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.book-section.visible {
+    opacity: 1;
+}
+/* إضافة الخلفية الشفافة فوق المربع */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* خلفية شفافة بضبابية 50% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* لضمان أن العنصر يكون فوق المحتوى */
+}
+
+/* تصميم الرسالة التحذيرية */
+.warning-message {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(255, 0, 0, 0.8); /* خلفية حمراء نصف شفافة للتحذير */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* ظل لجعل المربع يبدو بارزًا */
+}
+
+.warning-message i {
+    font-size: 50px;
+    color: yellow; /* لون المثلث التحذيري */
+    margin-bottom: 10px;
+}
+
+/* تنسيق النص تحت المثلث */
+.warning-message p {
+    margin: 0;
+    font-size: 18px;
+}
+/* التأكد من أن التحذير يتناسب مع جميع أحجام الشاشات */
+.books-section {
+    position: relative;
+    width: 100%;
+    height: 400px; /* يمكنك تحديد الارتفاع حسب تصميمك */
+}
+
+@media (max-width: 768px) {
+    .warning-message {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .warning-message i {
+        font-size: 40px;
+    }
+}
+.news-section {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.news-slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.news-item {
+    min-width: 100%;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.news-slider {
+    animation: slideNews 15s linear infinite;
+}
+
+@keyframes slideNews {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.news-section {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    overflow: hidden; /* إضافة هذه السطر لإخفاء المحتوى الزائد */
+    position: relative;
+}
+
+.news-slider {
+    display: flex;
+    width: max-content; /* يتسع فقط لمحتوى الأخبار */
+    position: relative;
+    white-space: nowrap; /* يمنع التفاف النص */
+}
+
+.news-item {
+    min-width: 300px; /* ضبط حجم الأخبار */
+    margin-right: 20px; /* مسافة بين الأخبار */
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: inline-block; /* يساعد في التحرك الجيد */
+}
+
+.news-slider {
+    animation: slideNews 10s linear infinite;
+}
+
+@keyframes slideNews {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.grades-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .grades-section h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .grade-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .grade-table th, .grade-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .grade-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .grade-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .grade-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  .grade-table td {
+    font-weight: bold;
+  }
+  /* تنسيق قسم الدرجات */
+.grades-section {
+    background-color: #f4f4f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* التحكم في العرض */
+    overflow-x: auto; /* للسماح بتمرير الجدول على الشاشات الصغيرة */
+  }
+  
+  .grades-section h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .grade-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    table-layout: fixed; /* يساعد في التوافق مع مختلف الأحجام */
+  }
+  
+  .grade-table th, .grade-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .grade-table th {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .grade-table td {
+    background-color: #ecf0f1;
+  }
+  
+  .grade-table tr:nth-child(even) {
+    background-color: #f7f7f7;
+  }
+  
+  .grade-table tr:hover {
+    background-color: #eaeaea;
+  }
+  
+  .grade-table td {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /* استجابة للموبايل */
+  @media screen and (max-width: 768px) {
+    .grade-table table {
+      font-size: 14px;
+    }
+  
+    .grade-table th, .grade-table td {
+      padding: 8px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .grades-section {
+      padding: 10px;
+    }
+  
+    .grade-table table {
+      font-size: 12px;
+      display: block;
+      overflow-x: auto; /* السماح بالتمرير الأفقي */
+    }
+  
+    .grade-table th, .grade-table td {
+      padding: 6px;
+    }
+  }
+  .qr-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #4a90e2, #7f00ff); /* Gradient background for a modern look */
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px; /* Adjust the size to fit your design */
+    margin: 20px auto;
+}
+
+.qr-box img {
+    width: 100px; /* QR code size */
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.link-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for a clean effect */
+    transition: all 0.3s ease;
+}
+
+.link-box:hover {
+    background-color: #f0f0f0;
+}
+
+.join-link {
+    text-decoration: none;
+    color: #7f00ff; /* Text color */
+    font-weight: bold;
+    font-size: 18px;
+}
+.join-link {
+    cursor: pointer;
+    color: blue; /* لتوضيح أن الزر قابل للنقر */
+    text-decoration: underline;
+}
+.link-box {
+    pointer-events: auto; /* تأكد من السماح بالنقر */
+}
+.join-link {
+    pointer-events: auto; /* تأكد من السماح بالنقر */
+    cursor: pointer; /* يضيف مؤشر اليد عند التمرير فوق الرابط */
+}
+.link-box {
+    position: relative;
+    z-index: 10; /* تأكد من أن العنصر فوق العناصر الأخرى */
+}
+.join-link {
+    display: inline-block; /* تأكد من أنه زر قابل للتفاعل */
+    padding: 10px 20px; /* أضف مساحة داخلية حول النص */
+    background-color: #007bff; /* لون خلفية للزر */
+    color: white; /* لون النص */
+    border-radius: 5px; /* اجعل الزر أكثر جاذبية */
+    text-decoration: none; /* أزل التسطير أسفل النص */
+}
+/* تصميم الزر */
+.link-box {
+    text-align: center; /* محاذاة الزر في المنتصف */
+}
+
+.join-link {
+    display: inline-block;
+    padding: 12px 24px; /* حجم الزر */
+    background-color: #007bff; /* لون الخلفية */
+    color: white; /* لون النص */
+    font-size: 16px; /* حجم النص */
+    font-weight: bold; /* جعل النص غامق */
+    border-radius: 8px; /* زوايا دائرية للزر */
+    text-decoration: none; /* إزالة التسطير تحت النص */
+    transition: all 0.3s ease; /* إضافة تأثير انتقال سلس */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* ظل حول الزر */
+    position: relative;
+    overflow: hidden;
+}
+
+.join-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2); /* تأثير لمعان */
+    transform: translateX(-100%);
+    transition: all 0.5s ease; /* سرعة تأثير التحريك */
+}
+
+.join-link:hover::before {
+    transform: translateX(100%); /* تحريك اللمعان عند التمرير */
+}
+
+.join-link:hover {
+    background-color: #0056b3; /* تغيير لون الخلفية عند التمرير */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* زيادة الظل عند التمرير */
+    transform: translateY(-5px); /* تحريك الزر قليلاً للأعلى */
+}
+.join-link {
+    background: linear-gradient(45deg, #007bff, #00c6ff); /* تدرج لوني جميل */
+    color: white;
+    /* باقي الأنماط كما هي */
+}
